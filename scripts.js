@@ -58,15 +58,15 @@ function recalculate() {
 
 
 function changeModel() {
-    let modelName = document.getElementById ("model-text");
+    let modelText = document.getElementById("model-text"); 
     
     if (modelName ==="XYZ") {
         modelName = "CPRG";
-        modelText.innerHTML = "Model CPRG";
+        modelText.innerText = "Model CPRG";
 
     } else if (modelName === "CPRG") {
                modelName = "XYZ";
-               modelText.innerHTML = "Model XYZ";
+               modelText.innerText = "Model XYZ";
     }
 
     recalculate();
@@ -96,7 +96,7 @@ function changeDuration() {
     let newDuration = prompt("Input new duration: ");
     duration = parseInt(newDuration);
     
-    durationText.innerHTML = duration;
+    durationText.innerText = duration;
     
 
     recalculate();
